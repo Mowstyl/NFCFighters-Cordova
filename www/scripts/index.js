@@ -27,4 +27,28 @@
     function onResume() {
         // TODO: esta aplicación se ha reactivado. Restaure el estado de la aplicación aquí.
     };
-} )();
+
+})();
+$(document).ready(function() {  
+    var progressbar = $('#progressbar'),  
+        max = progressbar.attr('max'),  
+        time = (1000/max)*5,      
+        value = progressbar.val();  
+ 
+    var loading = function() {  
+        value += 1;  
+        addValue = progressbar.val(value);  
+         
+        $('.progress-value').html(value + '%');  
+ 
+        if (value == max) {  
+            clearInterval(animate);
+            setTimeout("location.href = 'menu.html';", 2000);
+            //location.href = "menu.html";
+        }  
+    };  
+ 
+    var animate = setInterval(function() {  
+        loading();  
+    }, time);  
+});

@@ -31,24 +31,37 @@ body {
     font-size:12px;
 }
 
-.app {
+.main {
     background: url(../images/logo.png) no-repeat center top; 
+    background-size: contain;
     position: absolute;             
-    left: 50%;
-    top: 50%;
-    height: 50px;                  
-    width: 225px;                   
-    text-align: center;
-    padding: 180px 0px 0px 0px;     
-    margin: -115px 0px 0px -112px;
+    width: 100%;
+    height:100%;
 }
 
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;
-        margin:-90px 0px 0px -198px;
-    }
+#loading{
+    position:relative;
+    top:65%;
+    width:70%;
+    margin:auto;
+}
+
+progress {  
+    background-color: #f3f3f3;  
+    border: 0;  
+    height: 18px;  
+    border-radius: 9px; 
+    width:100%;
+    margin:auto; 
+    position:relative;
+}
+
+.progress-value{
+    text-align:center;
+}
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:440px) {
+    
 }
 
 h1 {
@@ -95,3 +108,4 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+

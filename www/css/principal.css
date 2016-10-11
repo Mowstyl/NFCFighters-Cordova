@@ -1,2 +1,18 @@
-﻿body {
+﻿ul.menu{
+    position:relative;
+    top:60%;
+    list-style:none;
+    margin:0;
+    padding:0;
+    width:60%;
+    margin:auto;
+}
+
+ul.menu li{
+    margin:20px 0 0;
+}
+
+ul.menu li input[type="button"]{
+    width:100%;
+    padding:10px 0;
 }
