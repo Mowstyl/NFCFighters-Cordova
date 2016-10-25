@@ -29,7 +29,7 @@
     };
 
 })();
-$(document).ready(function() {  
+$(document).ready(function () {
     var progressbar = $('#progressbar'),  
         max = progressbar.attr('max'),  
         time = (1000/max)*5,      
@@ -50,5 +50,11 @@ $(document).ready(function() {
  
     var animate = setInterval(function() {  
         loading();  
-    }, time);  
+    }, time);
 });
+function checkLanguage() {
+    navigator.globalization.getLocaleName(
+      function (language) { /*alert('language: ' + language.value + '\n');*/ },
+      function () { /*alert('Error getting language\n');*/ }
+    );
+}

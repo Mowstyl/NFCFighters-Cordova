@@ -1,11 +1,11 @@
 {
      "android": {
-         "release": {
-             "keystore": "",
-             "storePassword": "",
-             "alias": "",
-             "password" : "",
-             "keystoreType": ""
-         }
+      "release": {
+          "keystore": "c:\\nfcfighters.keystore",
+          "storePassword": "123456",
+          "alias": "TeamCat",
+          "password": "123456",
+          "keystoreType": ""
+      }
      }
  }

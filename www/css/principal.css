@@ -15,4 +15,7 @@ ul.menu li{
 ul.menu li input[type="button"]{
     width:100%;
     padding:10px 0;
+    border:2px solid inherit;
+    -webkit-border-radius: 5px 10px;  /* Safari  */
+    -moz-border-radius: 5px 10px;
 }
