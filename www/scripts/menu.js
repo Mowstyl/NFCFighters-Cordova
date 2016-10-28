@@ -1,12 +1,10 @@
-﻿$(document).ready(function () {
-
-    $("#play").click({
-        alert('hola');
-        //location.href = 'menu.html';
-    });
-
-    $("#salir").click({
-        
-    });
-
-});
+﻿function exitFromApp()
+{
+    navigator.app.exitApp();
+}
+function options() {
+    alert('Ninja');
+}
+function play() {
+    alert('Que diver tostarrica');
+}

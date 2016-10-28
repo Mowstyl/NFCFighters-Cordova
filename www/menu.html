@@ -10,14 +10,15 @@
 <body>
     <div class="main">
         <ul class="menu">
-            <li><input id="play" type="button" value="Jugar" /></li>
-            <li><input type="button" value="Configuración" /></li>
-            <li><input id="salir" type="button" value="Salir" /></li>
+            <li><input id="play" type="button" value="Jugar" onclick="play()"/></li>
+            <li><input id="options" type="button" value="Opciones" onclick="options()"/></li>
+            <li><input id="exit" type="button" value="Salir" onclick="exitFromApp()"/></li>
         </ul>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="scripts/platformOverrides.js"></script>
     <script type="text/javascript" src="scripts/jquery.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/menu.js"></script>
 </body>
 </html>
